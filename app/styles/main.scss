@@ -63,6 +63,7 @@ body {
 
   .img-responsive {
     position: absolute;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -86,25 +87,4 @@ body {
   left: 5.25%;
   z-index: 9;
   color: #6cb4e3;
-}
-
-/* CHARACTER */
-.character_body {
-  top: 0;
-}
-
-.character_eyes {
-  top: 15%;
-}
-
-.character_cheeks {
-  top: 30%;
-}
-
-.character_mouth {
-  top: 25%;
-}
-
-.character_tounge {
-  top: 25%;
 }
