@@ -6,6 +6,12 @@ $(function () {
 	app.mods.Parllax.Init();
 	app.mods.Lettering.Init();
 	app.mods.SVGInjector.Init();
+	app.mods.Snow.Init();
+
+});
+
+$(window).load(function () {
+	app.mods.Snow.Init();
 });
 
 var app = app || {
@@ -16,6 +22,17 @@ var app = app || {
 			selector: '#scene',
 			Init: function () {
 				$(this.selector).parallax();
+			}
+		},
+		Snow: {
+			selector: 'body',
+			Init: function () {
+				$(this.selector).snowfall({
+					round : true,
+					minSize: 2,
+					maxSize: 5,
+					flakeCount: 100
+				});
 			}
 		},
 		SVGInjector: {
