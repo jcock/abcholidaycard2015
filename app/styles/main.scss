@@ -1,0 +1,110 @@
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+
+
+
+/* LAYOUT
+=======================================================*/
+
+img[src*="svg"] {
+  max-height: 100%;
+}
+
+html,
+body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  .lt-ie9 & {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: #222;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  background-color: #dedede;
+
+  @media (min-width: $screen-md-min) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    font-size: 20px;
+  }
+}
+
+.lettering {
+  [class^="line"] {
+    display: block;
+  }
+}
+
+
+.layer {
+  width: 100%;
+  height: 100vh;
+
+  .img-responsive {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.scene-title,
+.scene-title_l2 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: 'Limelight', cursive;
+  font-size: 6.5vw;
+  color: #fff;
+  line-height: 0.875;
+}
+
+.scene-title_l2 {
+  top: 5.25%;
+  left: 5.25%;
+  z-index: 9;
+  color: #6cb4e3;
+}
+
+/* CHARACTER */
+.character_body {
+  top: 0;
+}
+
+.character_eyes {
+  top: 15%;
+}
+
+.character_cheeks {
+  top: 30%;
+}
+
+.character_mouth {
+  top: 25%;
+}
+
+.character_tounge {
+  top: 25%;
+}
