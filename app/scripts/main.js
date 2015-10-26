@@ -6,13 +6,13 @@ $(function () {
 	app.mods.Parllax.Init();
 	app.mods.Lettering.Init();
 	app.mods.SVGInjector.Init();
-	app.mods.Snow.Init();
+	// app.mods.Snow.Init();
 
 });
 
-$(window).load(function () {
+/*$(window).load(function () {
 	app.mods.Snow.Init();
-});
+});*/
 
 var app = app || {
 	vars: {
@@ -24,7 +24,7 @@ var app = app || {
 				$(this.selector).parallax();
 			}
 		},
-		Snow: {
+		/*Snow: {
 			selector: 'body',
 			Init: function () {
 				$(this.selector).snowfall({
@@ -34,7 +34,7 @@ var app = app || {
 					flakeCount: 100
 				});
 			}
-		},
+		},*/
 		SVGInjector: {
 			Init: function () {
 				// Elements to inject

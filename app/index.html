@@ -27,8 +27,6 @@
     <main role="main" class="l-main">
       <div class="container-fluid">
         <div class="scene-container">
-          <div class="scene-info">
-          </div>
           <ul id="scene">
             <li class="layer" data-depth="0.10">
               <img class="img-responsive character_body" src="images/yeti-body.png" alt="" />
@@ -42,16 +40,19 @@
             <li class="layer" data-depth="0.30">
               <img class="img-responsive character_mouth" src="images/yeti-mouth.png" alt="" />
             </li>
-            <li class="layer" data-depth="0.60">
+            <li class="layer" data-depth="0.80">
               <img class="img-responsive character_tounge" src="images/yeti-tounge.png" alt="" />
             </li>
             <li class="layer" data-depth="0.10">
-              <h1 class="scene-title_l2 lettering">Hap<br/>py <br />hol<br />ida<br />ys</h1>
+              <h1 class="scene-title_l2 lettering">Happy <br />holi<br />days</h1>
             </li>
             <li class="layer" data-depth="0.15">
-              <h1 class="scene-title lettering">Hap<br/>py <br />hol<br />ida<br />ys</h1>
+              <h1 class="scene-title lettering">Happy <br />holi<br />days</h1>
             </li>
           </ul>
+          <!-- <div class="scene-info">
+            <p>from</p>
+          </div> -->
         </div>
       </div>
     </main>
@@ -72,8 +73,8 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-    <script src="/bower_components/jquery-snowfall/dist/snowfall.min.js"></script>
-    <script src="/bower_components/jquery-snowfall/dist/snowfall.jquery.min.js"></script>
+    <!--<script src="/bower_components/jquery-snowfall/dist/snowfall.min.js"></script>
+    <script src="/bower_components/jquery-snowfall/dist/snowfall.jquery.min.js"></script>-->
 
     <!-- build:js(.) scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
@@ -92,6 +93,7 @@
 
 
     <!-- build:js scripts/main.js -->
+    <script src="scripts/deviceshake.js"></script>
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
 
